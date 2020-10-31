@@ -4,23 +4,12 @@
     font-family: sans-serif;
     background-color: lightBlue;
     border-style: dotted; 
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: start;
     padding: 50px;
     margin: 2% 30%;
+    min-height: 300px;
     
   }
   
-  .person {
-    border-style: double; 
-      text-align: center;
-   background: #fc0; /* Цвет фона */
-      width: 200px; /* Ширина блока */
-      padding: 5px; /* Поля */
-      margin-top: 10px; /* Отступ сверху */
-      border: 2px solid #000; /* Параметры рамки */
-      box-sizing: border-box; /* Ширина */
-    
-  }
-
