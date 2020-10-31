@@ -1,10 +1,12 @@
-#root {
+
+
+.SimpleContainer {
     font-family: sans-serif;
     background-color: lightBlue;
     border-style: dotted; 
     width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     padding: 50px;
     margin: 2% 30%;
     
@@ -21,3 +23,4 @@
       box-sizing: border-box; /* Ширина */
     
   }
+

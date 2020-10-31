@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import RoutesDemo from './components/routesdemo/routesdemo'
 
 const {useContext,useState,useReducer,useEffect, useRef} = React
 const MyContext = React.createContext();
@@ -63,7 +64,7 @@ const All = () => {
  const {context, dispatch} = useContext(MyContext);
  
  const list = context.persons.map((person, key) => (
-    <Person 
+    <Person key={key}
       name={person.name} 
       age={person.age} 
       plus={()=> dispatch({type: "plus",  key}) }
@@ -76,7 +77,7 @@ const All = () => {
   
   return (
       <>
-      <p>You chose: {context.choice}</p>
+      <p>You're changing: {context.choice}</p>
       {list}
       </>
 	)
@@ -86,8 +87,17 @@ const App = () => {
 
 return(
   <MyProvider>
+  <div className="SimpleContainer">
    <All/>
+   </div>
+   
+   <div className="SimpleContainer">
+   
+   <RoutesDemo/>
+   </div>
     </MyProvider>
+
+
   )
                                   
       

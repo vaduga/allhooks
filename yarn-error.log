@@ -1,8 +1,8 @@
 Arguments: 
-  /home/vaduga/.nvm/versions/node/v14.7.0/bin/node /home/vaduga/.nvm/versions/node/v14.7.0/bin/yarn start
+  /home/vaduga/.nvm/versions/node/v14.7.0/bin/node /home/vaduga/.nvm/versions/node/v14.7.0/bin/yarn add react-dom-router
 
 PATH: 
-  /usr/lib/android-sdk/emulator:/usr/lib/android-sdk/cmdline-tools/latest/bin:/home/vaduga/.nvm/versions/node/v14.7.0/bin:/usr/lib/android-sdk/emulator:/usr/lib/android-sdk/cmdline-tools/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/vaduga/go/bin:/usr/local/go/bin:/home/vaduga/.config/composer/vendor/bin:/usr/share/code/code:/Downloads/Kindlegen:/home/vaduga/flutter/bin:/home/vaduga/.config/composer/vendor/bin:/usr/share/code/code:/Downloads/Kindlegen:/home/vaduga/flutter/bin
+  /home/vaduga/.nvm/versions/node/v14.7.0/bin:/usr/lib/android-sdk/emulator:/usr/lib/android-sdk/cmdline-tools/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/vaduga/go/bin:/usr/local/go/bin:/home/vaduga/.config/composer/vendor/bin:/usr/share/code/code:/Downloads/Kindlegen:/home/vaduga/flutter/bin
 
 Yarn version: 
   1.22.5
@@ -14,12 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/vaduga/Desktop/Code/AllHooks/package.json: Unexpected string in JSON at position 252
-      at JSON.parse (<anonymous>)
-      at /home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/react-dom-router: Not found
+      at Request.params.callback [as _callback] (/home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (/home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (/home/vaduga/.nvm/versions/node/v14.7.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1244:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -33,7 +38,7 @@ npm manifest:
       "react-dom": "^17.0.1"
     },
     "scripts": {
-      "start": "yarn parcel serve index.html"
+      "start": "yarn parcel serve index.html",
       "build": "yarn parcel build index.html"
     }
   }
