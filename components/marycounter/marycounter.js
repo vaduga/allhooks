@@ -53,6 +53,7 @@ const Person = (props) => {
          <p>Возраст : {props.age}</p>
                <button onClick={props.plus}>Больше</button>
                <button onClick={props.minus}>Меньше</button>
+          <p>Rendered {renderCount.current[props.name]} times</p>
            </div>
          )
           
@@ -70,6 +71,7 @@ const Person = (props) => {
          plus={()=> dispatch({type: "plus",  key}) }
          minus={()=> dispatch({type: "minus",  key}) }
          choose={()=> dispatch({type: "choose",  key}) }
+         
        />
        
        )
